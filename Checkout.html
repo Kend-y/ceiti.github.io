@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+    </head>
+    
+    <body>
+    
+        <div id="app" class="max-w-7xl mx-auto p-4">
+            <header-component :links="page_links" :selected-category="selectedCategory"
+                @update-category="updateCategory"></header-component>
+            <div>
+                <checkout-component></checkout-component>
+            </div>
+            <footer-component :links="page_links"></footer-component>
+    
+        </div>
+    
+        <script src="products.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="Components.js"></script>
+    </body>
+</html>
+
+
+https://tailwindcomponents.com/component/checkout-page-1

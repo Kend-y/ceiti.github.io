@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: #edf2f7;
+        }
+
+        .search-clear {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container mx-auto p-4" style="max-width: 1280px;">
+        <header-component :links="page_links" :selected-category="selectedCategory"
+            @update-category="updateCategory"></header-component>
+        <div class="bg-white py-5 px-4 mt-5 w-full mx-auto bg-white rounded-lg shadow-lg">
+            <div class="container mx-auto">
+                <h1 class="text-center text-3xl font-bold mb-4">About Us</h1>
+                <p class="text-lg px-10">Welcome to HappyHouse, your ultimate destination for endless fun and boundless
+                    imagination!</p>
+                <p class="text-lg px-10">At HappyHouse, we've created a haven for enthusiasts of card games, video games,
+                    board games, and books to come together and revel in their passions. Whether you're seeking
+                    thrilling adventures in virtual worlds, strategic battles in card games, engaging narratives in
+                    books, or wholesome fun with friends and family in board games, you'll find it all right here.</p>
+                <p class="text-lg px-10">Join our vibrant community where players and readers of all ages and skill levels
+                    gather to share their love for gaming and literature. Explore our extensive collection of games and
+                    books, where every click or turn of the page promises excitement and discovery.</p>
+            </div>
+        </div>
+        <div class="bg-white p-4 mt-5 w-full mx-auto bg-white rounded-lg shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg duration-[500ms]">
+                    <h2 class="text-xl font-bold mb-2">Card Games</h2>
+                    <p class="text-lg">Explore our collection of card games and immerse yourself in strategic battles and thrilling competitions.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg duration-[500ms]">
+                    <h2 class="text-xl font-bold mb-2">Video Games</h2>
+                    <p class="text-lg">Dive into the virtual realms of video games and embark on epic adventures filled with excitement and wonder.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg duration-[500ms]">
+                    <h2 class="text-xl font-bold mb-2">Board Games</h2>
+                    <p class="text-lg">Discover the joy of board games and gather your friends and family for hours of fun and laughter.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg duration-[500ms]">
+                    <h2 class="text-xl font-bold mb-2">Books</h2>
+                    <p class="text-lg">Journey through the pages of our vast library of books and let your imagination soar to new heights.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer-component :links="page_links"></footer-component>
+
+    </div>
+
+    <script src="products.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="Components.js"></script>
+</body>
+
+</html>
